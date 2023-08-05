@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 namespace HAYASHI.Script
 {
@@ -7,9 +6,11 @@ namespace HAYASHI.Script
     public class NPCCarMove : MonoBehaviour
     {
         // 目的地のオブジェクトを配列で保持
-        public Transform[] m_Destinations;
+        [SerializeField]
+        private Transform[] m_Destinations;
         // 車の移動速度
-        public float m_CarMoveSpeed = 25f;
+        [SerializeField]
+        private float m_CarMoveSpeed = 25f;
         // 現在の目的地のインデックス
         private int m_CurrentDestinationIndex = 0;
 

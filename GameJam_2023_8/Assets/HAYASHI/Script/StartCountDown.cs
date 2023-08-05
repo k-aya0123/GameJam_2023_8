@@ -5,9 +5,10 @@ using UnityEngine.UI;
 public class StartCountDown : MonoBehaviour
 {
     // カウントダウンを表示するテキストオブジェクト
-    public Text m_CountdownText;
+    [SerializeField]
+    private Text m_CountdownText;
     // カウントダウンの時間
-    public float m_CountDownDuration = 3f;
+    private float m_CountDownDuration = 3f;
 
     private void Start()
     {
