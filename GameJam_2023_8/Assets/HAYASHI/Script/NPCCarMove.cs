@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 namespace HAYASHI.Script
 {
     [RequireComponent(typeof(NPCCarMove))]
@@ -13,9 +14,18 @@ namespace HAYASHI.Script
         private float m_CarMoveSpeed = 25f;
         // 現在の目的地のインデックス
         private int m_CurrentDestinationIndex = 0;
-
+       /* 
+        // テキストオブジェクト
+        [SerializeField]
+        private Text counterText;
+        // 現在の目的地のインデックス
+        private int currentDestinationIndex = 0;
+        // 一周回った回数をカウント
+        private int lapsCompleted = 0;
+       */
         private void Start()
         {
+          //  UpdateCounterText();
             MoveToDestination(m_CurrentDestinationIndex);
         }
 
@@ -55,12 +65,19 @@ namespace HAYASHI.Script
             m_CurrentDestinationIndex++;
             if (m_CurrentDestinationIndex >= m_Destinations.Length)
             {
+                // 一周回数を増やす
+             //   lapsCompleted++;
                 // 最後の目的地に到達したら最初に戻る
                 m_CurrentDestinationIndex = 0;
             }
-
+       //     UpdateCounterText(); // テキストを更新
             // 次の目的地へ移動
             MoveToDestination(m_CurrentDestinationIndex);
         }
+       /* private void UpdateCounterText()
+        {
+            // テキストオブジェクトに一周回数を表示
+            counterText.text = "Lap: " + lapsCompleted.ToString();
+        }*/
     }
 }

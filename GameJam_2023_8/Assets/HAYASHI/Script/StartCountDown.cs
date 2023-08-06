@@ -9,7 +9,7 @@ public class StartCountDown : MonoBehaviour
     private Text m_CountdownText;
     // カウントダウンの時間
     private float m_CountDownDuration = 3f;
-
+  
     private void Start()
     {
         // カウントダウンを開始する

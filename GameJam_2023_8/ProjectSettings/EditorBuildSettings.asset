@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/HAYASHI/Scene/GameSceneHaya.unity
     guid: ebdbf3810fe8d6344acca3341743c523
+  - enabled: 1
+    path: Assets/HAYASHI/Scene/ResultSceneHaya.unity
+    guid: 03994d7d47cf1864999221273d6c5e2d
   m_configObjects: {}
