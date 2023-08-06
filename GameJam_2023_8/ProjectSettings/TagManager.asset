@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - CheckpointStart
+  - Car
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Car
   - Water
   - UI
   - 
